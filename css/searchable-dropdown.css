@@ -1,0 +1,62 @@
+/*
+VERSION: 0.1.1
+searchable-dropdown.css
+author: Dan Koenig, dpkoenig27@gmail.com
+license Copyright (c) 2017, Dan Koenig
+Free to use under the WTFPL license
+*/
+div.searchable-drop-down{
+    position:relative;
+}
+
+div.searchable-drop-down > ul{
+    position:absolute; 
+    margin:0; 
+    padding:0; 
+    background-color:#ffffff; 
+    overflow-y:scroll; 
+    max-height:200px; 
+    z-index:10; 
+    width:100%;
+}
+
+div.searchable-drop-down > input{
+    width:100%;
+}
+
+div.searchable-drop-down > ul > li{
+    display: none;
+}
+
+div.searchable-drop-down > ul > li.selected{
+    background-color: rgba(0,0,0,.2);
+}
+
+div.searchable-drop-down > ul > li.arrow-over{
+    background-color: rgba(0,0,0,.1);
+}
+
+div.searchable-drop-down > ul > li.searchable-select-item{
+    cursor: pointer;
+}
+
+div.searchable-drop-down > ul > li.searchable-select-item:hover{
+    background-color: rgba(0,0,0,.1);
+}
+
+div.searchable-drop-down > ul > li.visible-item{
+    display:block;
+}
+
+div.searchable-drop-down >ul > li.searchable-dropdown-grouped-item{
+    padding-left:10px;
+}
+
+div.searchable-drop-down >ul > li.searchable-dropdown-grouped-item{
+    padding-left:10px;
+}
+
+div.searchable-drop-down >ul > li.searchable-header-item{
+    opacity: .5;
+    cursor: default;
+}
